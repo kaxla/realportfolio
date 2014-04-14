@@ -12,3 +12,8 @@
  *= require normalize-rails
  *= require_tree .
  */
+
+ * {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+ }
