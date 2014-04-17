@@ -187,11 +187,10 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
-
+  normalize-rails (~> 3.0)
   pg
   pry-debugger
   pry-rails
-  rails (= 4.1.0)
   rails_admin
   sass-rails (~> 4.0.0)
   turbolinks
