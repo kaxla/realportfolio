@@ -191,6 +191,7 @@ DEPENDENCIES
   pg
   pry-debugger
   pry-rails
+  rails (= 4.1.0)
   rails_admin
   sass-rails (~> 4.0.0)
   turbolinks

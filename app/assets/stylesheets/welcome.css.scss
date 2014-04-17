@@ -18,7 +18,41 @@ General Styles
 /*----------------------
 Layout
 ----------------------*/
-
+* {
+  /*outline: 1px solid black;*/
+}
+#about{
+  background-color: pink;
+  height: auto;
+  padding: 50px 0;
+}
+#console {
+  background-color: grey;
+  width: 670px;
+  /*height: 620px;*/
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#console-text {
+  font-family: 'Droid Sans Mono';
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#console-header {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.question {
+  padding: 0 0 0 30px;
+  margin-bottom: 0;
+}
+.answer {
+  padding: 0 0 0 45px;
+  margin-top: 0;
+}
 
 /*----------------------
 Typography
@@ -27,5 +61,4 @@ Typography
 /*----------------------
 Global Styles
 ----------------------*/
-
 
