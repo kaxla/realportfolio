@@ -14,24 +14,30 @@ General Styles
 ----------------------*/
 
 
-
-/*----------------------
-Layout
-----------------------*/
 * {
   /*outline: 1px solid black;*/
 }
+
+/*----------------------
+console
+----------------------*/
 #about{
-  background-color: pink;
+  background-color: #FF847C;
   height: auto;
   padding: 50px 0;
 }
 #console {
-  background-color: grey;
+  background-color: #515151;
   width: 670px;
-  /*height: 620px;*/
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
+}
+#top-bar {
+  height: 20px;
+  width: 670px;
+  margin: 0 auto;
+  background-color: #FAF8F2;
+  border-radius: 10px 10px 0 0;
 }
 #console-text {
   font-family: 'Droid Sans Mono';
@@ -46,17 +52,66 @@ Layout
   text-transform: uppercase;
 }
 .question {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 20px;
   margin-bottom: 0;
+  color: white;
+
 }
 .answer {
-  padding: 0 0 0 45px;
+  padding: 0 0 0 35px;
   margin-top: 0;
+  color: #ECECEC;
 }
 
 /*----------------------
-Typography
+Resume
 ----------------------*/
+
+#resume{
+  background-color: #FAF8F2;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#resume-text{
+  /*outline: 1px solid black;*/
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#resume-title h1 {
+  text-align: center;
+  padding: 10 0;
+/*  border: 1px solid red;
+*//*  border-bottom: 2px solid black;
+*/}
+
+.sectionTitle{
+  display: inline-block;
+  width: 25%;
+}
+
+.sectionContent {
+  display: inline-block;
+  vertical-align: top;
+  width: 72.5%;
+}
+.keySkills {
+  list-style-type: none;
+}
+.padded-skills {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  width: auto;
+}
+.resume-section {
+  padding: 10px;
+  border-top: 1px solid #A79C8E;
+}
 
 /*----------------------
 Global Styles
