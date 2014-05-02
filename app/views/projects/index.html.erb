@@ -4,7 +4,7 @@
     <div id="project">
       <p><%= project.title %></p>
       <p><%= project.description %></p>
-      <p><%= image_path(project.image) %></p>
+      <p><%= link_to image_path(project.image) %></p>
       <p><%= link_to 'Show', project %></p>
     </div><!--project-->
   <% end %>
