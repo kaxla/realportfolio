@@ -1,10 +1,10 @@
 <div id="project-index">
   <h1>Projects</h1>
   <% @projects.each do |project| %>
-    <div id="project"
+    <div id="project">
       <p><%= project.title %></p>
       <p><%= project.description %></p>
-      <p><%= project.image %></p>
+      <p><%= image_path(project.image) %></p>
       <p><%= link_to 'Show', project %></p>
     </div><!--project-->
   <% end %>

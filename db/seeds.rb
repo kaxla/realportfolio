@@ -7,4 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 @admin = Admin.create(email: "kaylas.email.address@gmail.com",
                     password: "knittles",
-                    password_confirmation: "knittles",)
+                    password_confirmation: "knittles")
+@portfolio = Project.create(title: "My Portfolio",
+                            description: "My portfolio, a rails app built with all styling built from scratch",
+                            image: "derp_bunny.jpg")
