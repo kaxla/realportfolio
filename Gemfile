@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk', '~> 1.5.7'
 gem 'cancan'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
+gem 'figaro'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'normalize-rails', '~> 3.0'
