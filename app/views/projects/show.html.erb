@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @project.image %>
+<%= image_tag @project.project_image.url%>
 </p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
