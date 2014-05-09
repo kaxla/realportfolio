@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
+<div id="project-show">
+  <div class="header">
+    <%= @project.title %>
+  </div><!--title-->
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+  <div class="project-image">
+  <%= image_tag @project.project_image.url%>
+  </div><!--project-image-->
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-<%= image_tag @project.project_image.url%>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+  <div id="description">
+    <%= @project.description %>
+  </div><!--description-->
+  <div class="back">
+    <%= link_to 'BACK', projects_path %>
+  </div><!--back-->
+</div><!--project-show-->

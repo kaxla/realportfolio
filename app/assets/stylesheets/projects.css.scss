@@ -1,16 +1,83 @@
+/*
+off white: #F8ECC9
+grey: #515151
+dark pink: #FF847C
+light pink: #F0B49E
+brown: #A79C8E
+*/
+
+
+/*html, body {
+  margin: 0;
+  padding: 0;
+}*/
+
+body {
+  background-color: #FF847C;
+  font-family: "PT Sans", sans-serif;
+
+}
+
+.header{
+  font-size: 40px;
+  padding: 40px 0px 20px 0px;
+}
 
 #project-index{
-  width: 670px;
+  width: 600px;
   margin: 0 auto;
-  outline: 1px solid black;
-  font-family: "PT Sans", sans-serif;
+  /*outline: 1px solid black;*/
+  text-align: center;
+  clear: both;
+}
+
+#project {
+  /*border: 1px solid black;*/
+  width: 600px;
+  margin: 10px auto 10px auto;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #F8ECC9;
+  padding: 10px 20px;
+}
+
+.project-image {
+  width: auto;
+
+}
+
+/*------------------------
+Show
+------------------------*/
+
+#project-show{
+  width: 600px;
+  margin: 0 auto;
   text-align: center;
 }
-thead{
-  width: 670px;
-  margin: 0 auto;
+
+.back a:link, .back a:visited, .back a:hover, .back a:active,  {
+    text-decoration:none;
 }
-#project {
-  border: 1px solid black;
-  display: inline-block;
+
+.back{
+  width: 90px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #F8ECC9;
+  margin: 20px auto;
+  text-decoration: none;
+  font-size: 20px;
+
 }
+
+.back:hover {
+   background: #F0B49E;
+   }
+
+
+
+
+
+
+

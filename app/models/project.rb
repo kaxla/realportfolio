@@ -11,7 +11,3 @@ class Project < ActiveRecord::Base
                     }
   validates_attachment_file_name :project_image, :matches => [/png\Z/, /jpe?g\Z/]
 end
-# correct:
-# https://s3-us-west-2.amazonaws.com/kaylamorrisonportfolio/image/6/enhanced-buzz-511-1296591390-30.jpg
-#displaying:
-# http://s3.amazonaws.com/kaylamorrisonportfolio/image/3/enhanced-buzz-517-1296592131-31.jpg?1399170852

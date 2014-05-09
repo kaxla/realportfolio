@@ -1,11 +1,1 @@
-<div id="project-index">
-  <h1>Projects</h1>
-  <% @projects.each do |project| %>
-    <div id="project">
-      <p><%= project.title %></p>
-      <p><%= project.description %></p>
-      <p><%= image_tag project.project_image.url %></p>
-      <p><%= link_to 'Show', project %></p>
-    </div><!--project-->
-  <% end %>
-</div>
+<%= render 'index' %>

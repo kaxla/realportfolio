@@ -1,0 +1,16 @@
+<div id="project-index">
+  <div class="header">PROJECTS</div>
+  <% @projects = Project.all %>
+  <% @projects.each do |project| %>
+    <div id="project">
+      <div class="project-image">
+        <p><%= image_tag project.project_image.url %></p>
+      </div><!--project-image-->
+      <div id="project-info">
+        <p><%= project.title %></p>
+        <p><%= project.description %></p>
+        <p><%= link_to 'Show', project %></p>
+      </div><!--project-info-->
+    </div><!--project-->
+  <% end %>
+</div>
