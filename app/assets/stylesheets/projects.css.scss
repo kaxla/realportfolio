@@ -6,44 +6,56 @@ light pink: #F0B49E
 brown: #A79C8E
 */
 
-
-/*html, body {
-  margin: 0;
-  padding: 0;
-}*/
-
-body {
-  background-color: #FF847C;
-  font-family: "PT Sans", sans-serif;
-
+#projects_index {
+  background-color: #F0B49E
 }
 
 .header{
   font-size: 40px;
   padding: 40px 0px 20px 0px;
-}
-
-#project-index{
-  width: 600px;
-  margin: 0 auto;
-  /*outline: 1px solid black;*/
   text-align: center;
-  clear: both;
 }
 
-#project {
-  /*border: 1px solid black;*/
-  width: 600px;
-  margin: 10px auto 10px auto;
-  border-radius: 15px;
-  display: inline-block;
-  background-color: #F8ECC9;
-  padding: 10px 20px;
+.square {
+  float: left;
+  position: relative;
+  width: 45%;
+  padding-bottom: 45%;
+  margin: 1.66%;
+  background-color: pink;
+  border-radius: 10px;
 }
 
-.project-image {
-  width: auto;
+.square:hover .inner-content{
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  -webkit-transition:all 0.4s ease-in-out;
+  -moz-transition:all 0.4s ease-in-out;
+  -o-transition:all 0.4s ease-in-out;
+}
 
+.content {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  padding: 10% 5%;
+  text-align: center;
+}
+
+.inner-content{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0;
+}
+
+.grid {
+  margin: 0 10%;
 }
 
 /*------------------------

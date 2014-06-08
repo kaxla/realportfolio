@@ -1,0 +1,27 @@
+<%= @contact = Contact.new %>
+<%= form_for(@contact) do |f| %>
+  <div id="form-main">
+    <div id="form-div">
+
+      <p class="name">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </p>
+
+      <p class="email">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </p>
+
+      <p class="message">
+          <%= f.label :message %><br>
+          <%= f.text_area :message %>
+      </p>
+
+      <div class="submit">
+        <%= f.submit %>
+      </div>
+
+    </div>
+  </div>
+<% end %>
