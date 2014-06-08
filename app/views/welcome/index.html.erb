@@ -8,7 +8,7 @@
   </div>
 
   <div id="essentials">
-    <%= image_tag("essentials_km.png", :alt => "essentials") %>
+    <%= image_tag("essentials.gif", :alt => "essentials") %>
   </div><!--essentials-->
 </header>
 
@@ -179,11 +179,11 @@
 </div><!--resume-->
 
 <div id="portfolio">
-  <%= render'projects/index' %>
+  <%= render 'projects/index' %>
 </div><!--portfolio-->
 
 <div id="contact">
-  <!---mailer shit here-->
+  <%= render 'contacts/form' %>
 </div>
 
 <footer>
