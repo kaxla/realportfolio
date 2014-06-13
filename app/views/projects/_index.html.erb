@@ -6,11 +6,12 @@
   <% @projects.each do |project| %>
       <div style="background-image: url(<%= project.project_image.url %>)" class="square">
         <div class="content">
-          <div class="inner-content">
-              <p><%= project.title %></p>
-              <p><%= project.description %></p>
-              <p><%= link_to 'Show', project %></p>
-          </div><!--inner-content-->
+          <%= link_to project_path(project.id) do %>
+            <div class="inner-content">
+                <p><%= project.title %></p>
+                <p><%= project.description %></p>
+            </div><!--inner-content-->
+          <% end %>
         </div><!--content-->
       </div><!--square-->
   <% end %>
