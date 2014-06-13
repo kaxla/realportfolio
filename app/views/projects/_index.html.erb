@@ -2,7 +2,6 @@
   <div class="header">Projects</div>
 
   <% @projects = Project.all %>
-
     <div class="grid">
   <% @projects.each do |project| %>
       <div style="background-image: url(<%= project.project_image.url %>)" class="square">
@@ -16,4 +15,3 @@
       </div><!--square-->
   <% end %>
     </div>
-
