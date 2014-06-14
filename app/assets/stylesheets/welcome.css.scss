@@ -251,6 +251,7 @@ Projects/Portfolio
   color: #FAF8F2;
   overflow:hidden;
   font-family: 'PT Sans', sans-serif;
+  padding-bottom: 70px;
 }
 
 /*----------------------
@@ -258,5 +259,8 @@ Contact
 ----------------------*/
 
 #contact {
-  height: auto;
+/*  height: auto;*/
+  overflow:hidden;
+  padding-bottom:70px;
+  background-color: white;
 }
