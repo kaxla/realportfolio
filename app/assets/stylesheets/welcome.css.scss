@@ -1,22 +1,11 @@
-
 /*
-
- Colors:
-==========
+white: #FAF8F2;
 off white: #F8ECC9
 grey: #515151
-pink: #FF847C
+dark pink: #FF847C
+light pink: #F0B49E
+brown: #A79C8E
 */
-
-
-/*----------------------
-General Styles
-----------------------*/
-
-
-* {
-  /*outline: 1px solid black;*/
-}
 
 /*------------------------
 Nav bar
@@ -267,6 +256,7 @@ Footer
 ---------------------------*/
 
 footer{
-  background-color: purple;
+  background-color: #A79C8E;
+  height: 75px;
 }
 

@@ -1,29 +1,30 @@
+<%= stylesheet_link_tag "blogs" %>
+
+  <div id='cssmenu'>
+    <ul>
+    <li><%=link_to 'Home', root_path %></li>
+    <li><a href='#'><span>Resume</span></a></li>
+    <li><%=link_to "Projects", projects_path %></li>
+    <li class='active'><%=link_to "Blog", blogs_path %></li>
+    <li class='last'><%=link_to "Contact", new_contact_path %></li>
+    </ul>
+  </div>
+
 <h1>Listing blogs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<% @blogs.each do |blog| %>
+  <div id="content">
+    <div id="main">
+      <div class="post">
+        <h2><%= blog.title %></h2>
+      <div class="post-content">
+        <%= blog.body %>
+      </div>
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      </div>
+    </div>
+  </div>
+<% end %>
 
-<br>
 
 <%= link_to 'New Blog', new_blog_path %>
