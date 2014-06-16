@@ -7,9 +7,9 @@ light pink: #F0B49E
 brown: #A79C8E
 */
 
-html{
+/*html{
   background-color: #FF847C;
-}
+}*/
 
 #contact-header{
   text-align:center;
@@ -18,27 +18,19 @@ html{
   padding-top: 30px;
 }
 
-#feedback-page{
-  text-align:center;
-}
-
 #form-main{
   width:100%;
-  float:left;
   padding-top:0px;
+  padding-bottom: 75px;
 }
 
 #form-div {
   background-color:#F0B49E;
-  padding: 35px;
+  padding: 35px 35px 50px 35px;
   width: 450px;
-  float: left;
-  left: 50%;
-  position: absolute;
-  margin-top:30px;
-  margin-left: -260px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+  margin: 30px auto 0;
 }
 
 .feedback-input {
@@ -60,20 +52,13 @@ html{
 }
 
 .feedback-input:focus{
-  background: #fff;
+  background: #FAF8F2;
   box-shadow: 0;
   border: 3px solid #A79C8E;
   color: #A79C8E;
   outline: none;
-  padding: 13px 13px 13px 54px;
+  padding: 13px 13px 13px 13px;
 }
-
-.focused{
-  color:#30aed6;
-  border:#30aed6 solid 3px;
-}
-
-
 
 textarea {
     width: 100%;
@@ -84,12 +69,11 @@ textarea {
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
-  background-color:white;
+  background-color:#F9F9F9;
 }
 
 #button-blue{
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  float:left;
   width: 100%;
   border: #A79C8E solid 4px;
   cursor:pointer;
@@ -129,3 +113,4 @@ input:focus, textarea:focus {
   width:100%;
   background-color:#A79C8E;
 }
+
