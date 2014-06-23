@@ -1,12 +1,12 @@
 <%= stylesheet_link_tag "contacts" %>
-<div id='cssmenu'>
-  <ul>
-    <li><%=link_to 'Home', root_path %></li>
-    <li><a href='#'><span>Resume</span></a></li>
-    <li><%=link_to "Projects", projects_path %></li>
-    <li><%=link_to "Blog", blogs_path %></li>
-    <li class='last active'><%=link_to "Contact", new_contact_path %></li>
-  </ul>
-</div>
+  <div id='cssmenu'>
+    <ul>
+      <li><%=link_to 'Home', root_path %></li>
+      <li><a href='/#resume'><span>Resume</span></a></li>
+      <li><%=link_to "Projects", projects_path %></li>
+      <li><a href="/blog"><span>Blog</span></a></li>
+      <li class='last'><%=link_to "Contact", new_contact_path %></li>
+    </ul>
+  </div>
 
 <%= render 'form' %>
