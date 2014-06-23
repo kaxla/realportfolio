@@ -1,8 +1,6 @@
 Realportfolio::Application.routes.draw do
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :blogs
-
   resources :projects
   resources "contacts", only: [:new, :create]
 
