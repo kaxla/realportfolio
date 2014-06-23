@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'aws-sdk', '~> 1.5.7'
+gem 'bloggy'
 gem 'cancan'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
