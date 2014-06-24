@@ -11,7 +11,7 @@
     {
       :subject => "Website email!",
       :to => "kayla@kaylaamorrison.com",
-      :from => %("#{name}" <#{email}>)
+      :from => "kayla@kaylaamorrison.com"
     }
   end
 end
