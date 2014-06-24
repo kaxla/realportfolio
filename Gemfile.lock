@@ -143,9 +143,6 @@ GEM
     postmark (1.2.0)
       json
       rake
-    postmark-rails (0.7.0)
-      actionmailer (>= 3.0.0)
-      postmark (~> 1.2.0)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -253,11 +250,12 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
+  mail
   mail_form
   normalize-rails (~> 3.0)
   paperclip (~> 4.1)
   pg
-  postmark-rails
+  postmark
   pry-debugger
   pry-rails
   rails (= 4.1.0)
