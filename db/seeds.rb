@@ -12,4 +12,5 @@
                             description: "My portfolio, a rails app built with all styling built from scratch",
                             image: "derp_bunny.jpg")
 @blog = Blog.create(title: "neat blog",
+                    synopsis: "neat synopsis",
                     body: "this is a body")

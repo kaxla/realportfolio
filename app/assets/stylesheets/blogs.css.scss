@@ -1,3 +1,42 @@
-// Place all the styles related to the blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+white: #FAF8F2;
+off white: #F8ECC9
+grey: #515151
+dark pink: #FF847C
+light pink: #F0B49E
+brown: #A79C8E
+*/
+
+#blogs_title {
+  text-align: center;
+  padding: 60px;
+  color: #FAF8F2;
+  font-size: 40px;
+}
+
+#blogs{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;}
+
+.title{
+  font-size: 2em;
+}
+
+.date{
+  font-size: 1.1em;
+  color: #515151;
+}
+
+.synopsis{
+  margin-left: 40px;
+  color: #FAF8F2;
+}
+
+a{
+  color: #F0B49E;
+}
+
+a:hover{
+  color: #FF847C;
+}
