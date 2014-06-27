@@ -1,5 +1,5 @@
 <% @blogs = Blog.all %>
 
 <% @blogs.each do |blog| %>
-  <%= link_to blog.title, blogs_path(blog) %>
+  <%= link_to blog.title, blog_path(blog) %>
 <% end %>
