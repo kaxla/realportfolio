@@ -1,5 +1,5 @@
-class Contact < ActiveRecord::Base
-  class ContactForm < MailForm::Base
+# class Contact < ActiveRecord::Base
+  class Contact < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
@@ -11,8 +11,8 @@ class Contact < ActiveRecord::Base
     {
       :subject => "Website email!",
       :to => "kayla@kaylaamorrison.com",
-      :from => %("#{name}" <#{email}>)
+      :from => "kayla@kaylaamorrison.com"
     }
   end
 end
-end
+# end
