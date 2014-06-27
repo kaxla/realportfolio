@@ -1,0 +1,74 @@
+
+<h1 id="default_hash_values_in_ruby">Default Hash Values in Ruby</h1>
+
+<p>I was recently using Ruby Koans to work on some of my core Ruby principles and I learned some neat things about hashes in ruby.</p>
+
+<p>In Ruby hashes can have default values. Whatever you put in that default will automatically be the value for any nonexistant key.</p>
+
+<p><code>hash = Hash.new(&quot;puppies&quot;)</code></p>
+
+<p>means that</p>
+
+<p><code>hash[:nonexistantkey] = &quot;puppies&quot;</code></p>
+
+<p>Ok, that’s pretty straightforward. But what happens when you try to do something more complicated?</p>
+
+<p>What if you set your default value to an empty array?</p>
+
+<p><code>hash = Hash.new([])</code> As expected <code>hash[:notakey] = []</code></p>
+
+<p>What if you shovel some values into that empty array?</p>
+
+<p><code>hash[:one] &lt;&lt; &quot;uno&quot;</code> As expected <code>hash[:one] = [&quot;uno&quot;]</code></p>
+
+<p>What if you shovel some more values into that array?</p>
+
+<p><code>hash[:two] &lt;&lt; [&quot;dos&quot;]</code></p>
+
+<p>Here’s where it gets weird. You would now expect</p>
+
+<p><code>hash[:two] = [&quot;dos&quot;]</code> and <code>hash[:one] = [&quot;uno&quot;]</code></p>
+
+<p>but they don’t:</p>
+
+<p><code>hash[:one] = [&quot;uno&quot;, &quot;dos&quot;]</code></p>
+
+<p><code>hash[:two] = [&quot;uno&quot;, &quot;dos&quot;]</code></p>
+
+<p><code>hash[:notakey] = [&quot;uno&quot;, &quot;dos&quot;]</code>.</p>
+
+<p>PLUS even after all of this <code>hash = {}</code></p>
+
+<h2 id="wat">WAT?</h2>
+
+<p>That default empty array value is not setting each key to it’s own array, it is setting all keys to THE SAME array. Hash is still equal to an empty hash because you never actually assigned a value to the keys <code>:one</code> and <code>:two</code>, you just shovelled everything into the default array which only returns if you input a nonexistant key.</p>
+
+<p>Okay, so what if instead of using an empty array as the default you use a block that assigns an empty array?</p>
+
+<p><code>hash = Hash.new {|hash, key| hash[key] = []}</code></p>
+
+<p>now if you call an unknown key it will evaluate the block and return the answer. So <code>hash[:notakey] = []</code></p>
+
+<p>You might expect it to have the same behavior as above when shovelling values into the array, but it doesn’t. It has the behavior we expected the above to have:</p>
+
+<p><code>hash[:one] &lt;&lt; &quot;uno&quot;</code></p>
+
+<p><code>hash[:two] &lt;&lt; &quot;dos&quot;</code></p>
+
+<p>now</p>
+
+<p><code>hash[:one] = [&quot;uno&quot;]</code></p>
+
+<p><code>hash[:two] = [&quot;dos&quot;]</code></p>
+
+<p><code>hash[:notakey] = []</code></p>
+
+<p><code>hash = {:one =&gt; [&quot;uno&quot;], :two =&gt; [&quot;dos&quot;]}</code></p>
+
+<p>The block is assigning each key its own empty array and actually assigns the value instead of just shovelling it into the default array.</p>
+
+<p>There’s a blog post about all kinds of cool stuff you can do with these techniques <a href="http://endofline.wordpress.com/2010/12/24/hash-tricks/">here</a></p>
+
+<p>Original problem from <a href="http://rubykoans.com/">Ruby Koans</a></p>
+
+<p>Original help figuring out what the heck was happening with the default value of empty array thanks to <a href="http://stackoverflow.com/questions/2698460/strange-ruby-behavior-when-using-hash-new">this</a> stack overflow post</p>
