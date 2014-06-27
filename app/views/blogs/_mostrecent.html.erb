@@ -1,0 +1,14 @@
+<% @blogs = Blog.last(3) %>
+
+<div class="blog_body">
+<% @blogs.each do |blog| %>
+  <div class="date_title">
+      <div class="date"><b><%= blog.created_at.strftime("%B %e, %Y") %></b></div>
+      <div class="title"><%= link_to blog.title, blog_path(blog) %></div>
+  </div><!--date_title-->
+  <div class="synopsis">
+      <%= blog.synopsis %>
+  </div><!--synopsis-->
+  <p></p>
+    <% end %>
+</div><!--blogs-->
