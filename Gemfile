@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'aws-sdk', '~> 1.5.7'
-gem 'bloggy'
 gem 'cancancan', '~> 1.8'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
@@ -13,7 +12,6 @@ gem 'normalize-rails', '~> 3.0'
 gem 'paperclip', '~> 4.1'
 gem 'pg'
 gem 'postmark-rails', '~> 0.8.0'
-
 gem 'rails', '4.1.0'
 gem 'rails_12factor'
 gem 'rails_admin'
