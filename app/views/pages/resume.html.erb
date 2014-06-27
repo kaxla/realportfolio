@@ -1,56 +1,13 @@
-<header>
 <div id='cssmenu'>
   <ul>
     <li class='active'><%=link_to 'Home', root_path %></li>
-    <li class="current"><a href="/resume">Resume</a></li>
+    <li class="current"><%= link_to 'Resume', page_path('resume') %></li>
     <li><%=link_to "Projects", projects_path %></li>
-    <li><%=link_to "Blog", blogs_path %></li>
+    <li><%=link_to "Blog", blogs_path %><span></li>
     <li class='last'><%=link_to "Contact", new_contact_path %></li>
   </ul>
 </div>
 
-  <div id="essentials">
-    <%= image_tag("essentials.gif", :alt => "There's supposed to be a really cool illustration here") %>
-  </div><!--essentials-->
-</header>
-
-
-
-<div id="about">
-  <section id="console-header">
-    Hello, world! I'm a Full-stack Rails developer.
-  </section><!--console-header-->
-  <section id="top-bar"></section>
-  <section id="console">
-    <section id="console-text">
-      <p class="question">> Kayla.education</p>
-      <p class="answer">=> [ "Codefellows", "University of Puget Sound" ]</p>
-
-      <p class="question">> Kayla.specialties</p>
-      <p class="answer">=> ["Ruby", "Rails", "Git", "Squarespace customization"]</p>
-
-      <p class="question">> Kayla.email</p>
-      <p class="answer">=> "<%= mail_to "kayla@kaylaamorrison.com" %>"</p>
-
-      <p class="question">> Kayla.resume.download</p>
-      <p class="answer">=> "<a href="">kaylamorrison.pdf</a>"</p>
-
-      <p class="question">> Kayla.linkedin</p>
-      <p class="answer">=> "<a href="http://linkedin.com/in/kaylaarianamorrison">linkedin.com/in/kaylaarianamorrison</a>"</p>
-
-      <p class="question">> Kayla.github</p>
-      <p class="answer">=> "<a href="http://github.com/kaxla">github.com/kaxla</a>"</p>
-
-      <p class="question">> Kayla.twitter</p>
-      <p class="answer">=> "<a href="https://twitter.com/kaylamorrison">@kaylamorrison</a>"</p>
-
-      <p class="question">> Kayla.interests</p>
-      <p class="answer">=> ["gardening", "sewing", "general being an old lady"]</p>
-    </section><!--console-text-->
-  </section><!--console-->
-</div><!--About-->
-
-<a name="resume"></a>
 <div id="resume">
   <div id="resume-text">
     <div id="resume-title">
@@ -180,20 +137,3 @@
     </section>
   </div><!--resume-text-->
 </div><!--resume-->
-
-<div id="portfolio">
-  <%= render 'projects/index' %>
-</div><!--portfolio-->
-
-<div id="recent-blogs">
-  <div id="recent_blogs_title">Recent Blog Posts</div>
-  <%= render 'blogs/mostrecent' %>
-</div><!--recent blogs-->
-
-<div id="contact">
-  <%= render 'contacts/form' %>
-</div><!--contact-->
-
-<footer>
-  <%= render 'footer' %>
-</footer>
