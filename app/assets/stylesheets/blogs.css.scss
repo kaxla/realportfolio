@@ -6,18 +6,30 @@ dark pink: #FF847C
 light pink: #F0B49E
 brown: #A79C8E
 */
-
+* {
+  /*border: 1px yellow solid;*/
+}
 #blogs_title {
   text-align: center;
-  padding: 60px;
+  padding: 60px 0 30px 0;
   color: #FAF8F2;
   font-size: 40px;
 }
 
-#blogs{
+.blog_body{
   width: 80%;
   margin: 0 auto;
-  padding: 20px;}
+  padding: 0 20px;
+}
+
+.blog_body a{
+  color:#F0B49E;
+}
+
+.blog_body a:hover{
+  color: #FF847C;
+}
+
 
 .title{
   font-size: 2em;
@@ -33,10 +45,51 @@ brown: #A79C8E
   color: #FAF8F2;
 }
 
-a{
+.title a{
   color: #F0B49E;
 }
 
-a:hover{
+.title a:hover{
+  color: #FF847C;
+}
+
+/*-------------------
+SHOW
+---------------------*/
+
+#show_date{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blog_body{
+  color: #FAF8F2;
+  padding: 20px 40px;
+}
+
+.blog_body h3{
+  color: #515151;
+  font-size: 30px;
+  text-align: center;
+}
+
+.CodeRay{
+  background-color: #FAF8F2;
+  padding: 1px 20px;
+  overflow: none;
+  color: black;
+}
+
+#back_link{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
+}
+
+#back_link a{
+  color: #F0B49E;
+}
+
+#back_link a:hover{
   color: #FF847C;
 }

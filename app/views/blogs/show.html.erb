@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <div id='cssmenu'>
+    <ul>
+    <li><%=link_to 'Home', root_path %></li>
+    <li><a href='#'><span>Resume</span></a></li>
+    <li><%=link_to "Projects", projects_path %></li>
+    <li class='active'><%=link_to "Blog", blogs_path %></li>
+    <li class='last'><%=link_to "Contact", new_contact_path %></li>
+    </ul>
+  </div>
 
-<p>
-  <strong>Body:</strong>
-  <%= markdown(@blog.body) %>
-</p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+  <div class="blog_body">
+    <div id="show_date">
+      <%= @blog.created_at.strftime("%B %e, %Y") %>
+    </div>
+    <%= markdown(@blog.body) %>
+  </div>
+
+<div id="back_link">
+  <%= link_to 'Back To All Posts', blogs_path %>
+</div>

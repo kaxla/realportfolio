@@ -1,6 +1,6 @@
 <% @blogs = Blog.all %>
 
-<div id="blogs">
+<div class="blog_body">
 <% @blogs.each do |blog| %>
   <div class="date_title">
       <div class="date"><b><%= blog.created_at.strftime("%B %e, %Y") %></b></div>
