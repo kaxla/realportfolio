@@ -10,21 +10,7 @@
     </ul>
   </div>
 
-<h1>Listing blogs</h1>
-
-<% @blogs.each do |blog| %>
-  <div id="content">
-    <div id="main">
-      <div class="post">
-        <h2><%= blog.title %></h2>
-      <div class="post-content">
-        <%= blog.body %>
-      </div>
-
-      </div>
-    </div>
-  </div>
-<% end %>
+<%= render "index" %>
 
 
 <%= link_to 'New Blog', new_blog_path %>
