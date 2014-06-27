@@ -18,7 +18,7 @@
 
 <div id="about">
   <section id="console-header">
-    Hello, world! I'm a Seattle-based web developer.
+    Hello, world! I'm a Full-stack Rails developer.
   </section><!--console-header-->
   <section id="top-bar"></section>
   <section id="console">
@@ -27,25 +27,25 @@
       <p class="answer">=> [ "Codefellows", "University of Puget Sound" ]</p>
 
       <p class="question">> Kayla.specialties</p>
-      <p class="answer">=> ["ruby", "rails", "things", "things"]</p>
+      <p class="answer">=> ["Ruby", "Rails", "Git", "Squarespace customization"]</p>
 
       <p class="question">> Kayla.email</p>
-      <p class="answer">=> "<a href="">kayla@kaylaamorrison.com</a>"</p>
+      <p class="answer">=> "<%= mail_to "kayla@kaylaamorrison.com" %>"</p>
 
       <p class="question">> Kayla.resume.download</p>
       <p class="answer">=> "<a href="">kaylamorrison.pdf</a>"</p>
 
       <p class="question">> Kayla.linkedin</p>
-      <p class="answer">=> "<a href="">linkedin.com/in/kaylaarianamorrison</a>"</p>
+      <p class="answer">=> "<a href="http://linkedin.com/in/kaylaarianamorrison">linkedin.com/in/kaylaarianamorrison</a>"</p>
 
       <p class="question">> Kayla.github</p>
-      <p class="answer">=> "<a href="">github.com/kaxla</a>"</p>
+      <p class="answer">=> "<a href="http://github.com/kaxla">github.com/kaxla</a>"</p>
 
       <p class="question">> Kayla.twitter</p>
-      <p class="answer">=> "<a href="">@kaylamorrison</a>"</p>
+      <p class="answer">=> "<a href="https://twitter.com/kaylamorrison">@kaylamorrison</a>"</p>
 
       <p class="question">> Kayla.interests</p>
-      <p class="answer">=> ["gardening", "thing", "thing"]</p>
+      <p class="answer">=> ["gardening", "sewing", "general being an old lady"]</p>
     </section><!--console-text-->
   </section><!--console-->
 </div><!--About-->
@@ -195,5 +195,5 @@
 </div><!--contact-->
 
 <footer>
-  things and stuff
+  <%= render 'footer' %>
 </footer>
