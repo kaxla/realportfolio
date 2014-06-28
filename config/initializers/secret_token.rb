@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Realportfolio::Application.config.secret_key_base = 'e396c2353363efd05a41930329c34aff45d4024ba39120e0fb562230ec6b4548fbd563ffab2af29a53eb7d9c44be923d47469d822a8383531a6d87f3d539a1bc'
+Realportfolio::Application.config.secret_key_base = ENV["SECRET_TOKEN"]
