@@ -19,9 +19,9 @@
   </div><!--project-image-->
 
   <div id="description">
-    <%= @project.description %>
+    <%= markdown(@project.description) %>
   </div><!--description-->
   <div class="back">
-    <%= link_to 'BACK', projects_path %>
+    <%= link_to 'Back', projects_path %>
   </div><!--back-->
 </div><!--project-show-->

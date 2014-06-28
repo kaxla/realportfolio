@@ -80,24 +80,27 @@ Show
   text-align: center;
 }
 
-.back a:link, .back a:visited, .back a:hover, .back a:active,  {
-    text-decoration:none;
+#description{
+  color: #515151;
 }
 
 .back{
   width: 90px;
   padding: 10px;
-  border-radius: 15px;
-  background-color: #F8ECC9;
+  border-radius: 2px;
   margin: 20px auto;
   text-decoration: none;
   font-size: 20px;
+  border: 4px solid #FAF8F2;
+}
 
+.back a{
+  color: #FAF8F2;
 }
 
 .back:hover {
-   background: #F0B49E;
-   }
+  background: #FF847C;
+}
 
 
 
