@@ -8,9 +8,9 @@
 @admin = Admin.create(email: "kaylas.email.address@gmail.com",
                     password: ENV["site_password"],
                     password_confirmation: ENV["site_password"])
-@portfolio = Project.create(title: "My Portfolio",
-                            description: "My portfolio, a rails app built with all styling built from scratch",
-                            image: "derp_bunny.jpg")
-@blog = Blog.create(title: "neat blog",
-                    synopsis: "neat synopsis",
-                    body: "this is a body")
+# @portfolio = Project.create(title: "My Portfolio",
+#                             description: "My portfolio, a rails app built with all styling built from scratch",
+#                             image: "derp_bunny.jpg")
+# @blog = Blog.create(title: "neat blog",
+#                     synopsis: "neat synopsis",
+#                     body: "this is a body")
