@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 @admin = Admin.create(email: "kaylas.email.address@gmail.com",
-                    password: ENV["site_password"],
-                    password_confirmation: ENV["site_password"])
+                    password: ENV["SITE_PASSWORD"],
+                    password_confirmation: ENV["SITE_PASSWORD"])
 # @portfolio = Project.create(title: "My Portfolio",
 #                             description: "My portfolio, a rails app built with all styling built from scratch",
 #                             image: "derp_bunny.jpg")
