@@ -21,3 +21,21 @@
  a {
   text-decoration: none;
  }
+
+#footer {
+  text-align: center;
+  padding: 30px;
+  color: #FAF8F2;
+}
+
+#footer a {
+  color: #F0B49E;
+}
+/*
+white: #FAF8F2;
+off white: #F8ECC9
+grey: #515151
+dark pink: #FF847C
+light pink: #F0B49E
+brown: #A79C8E
+*/

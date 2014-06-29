@@ -26,15 +26,22 @@ html{
   padding-bottom: 45%;
   margin: 1.66%;
   background-color: #F0B49E;
-  border-radius: 10px;
+  border-radius: 2px;
+}
+
+  .square .inner-content{
+  transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -webkit-transition:all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -moz-transition:all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -o-transition:all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .square:hover .inner-content{
-  opacity: .9;
-  transition: all 1s ease-in-out;
-  -webkit-transition:all 0.4s ease-in-out;
-  -moz-transition:all 0.4s ease-in-out;
-  -o-transition:all 0.4s ease-in-out;
+  opacity: .8;
+  transition: all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -webkit-transition:all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -moz-transition:all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+  -o-transition:all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .content {
@@ -52,7 +59,7 @@ html{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color:  #FAF8F2;
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 20px;
   opacity: 0;
   text-decoration: none;

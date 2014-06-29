@@ -1,7 +1,7 @@
 <div id='cssmenu'>
   <ul>
     <li><%=link_to 'Home', root_path %></li>
-    <li class='active'><%= link_to 'Resume', page_path('resume') %></li>
+    <li class='active'><a href="/resume">Resume</a></li>
     <li><%=link_to "Projects", projects_path %></li>
     <li><%=link_to "Blog", blogs_path %></li>
     <li class='last'><%=link_to "Contact", new_contact_path %></li>
@@ -20,7 +20,13 @@
       </div>
       <div class="sectionContent">
         <article>
-          I am a Seattle-based web developer specializing in Ruby on Rails and TDD/BDD. I have a passion for clean design and usability as well as a never-ending hunger to learn new skills.
+          <p>I am a Seattle-based full-stack rails developer who recently switched careers.<p>
+
+          <p>I love learning and I learn very quickly. A year ago I didn’t even know what Ruby on Rails was and had not written a line of code since programming my TI-86 to do the quadratic formula for me in high school. I taught myself Ruby using nothing but library books and google and then I got in to Code Fellows where I learned how to write and deploy a functioning Rails app (among other things) in two months.</p>
+
+          <p>I am self-motivated but also work well with others. I enjoy being the member of a team and strive to push myself and others to do the very best work possible and deliver products that are above and beyond what was originally asked for. I have experience working in an Agile environment and am well-versed in using Git for version control and collaboration.</p>
+
+          <p>I am currently looking for a full-time Ruby on Rails developer job in the Seattle area. You can see my code on my github: github.com/kaxla and live versions of my projects below in the "Projects" section.</p>
         </article>
       </div>
     </section>
@@ -37,11 +43,10 @@
           <li class="padded-skills">Git</li>
           <li class="padded-skills">HTML5/CSS3</li>
           <li class="padded-skills">TDD/BDD</li>
-          <li class="padded-skills">Java</li>
           <li class="padded-skills">Agile Methodologies</li>
-          <li class="padded-skills">Javascript</li>
-          <li class="padded-skills">Problem Solving</li>
-          <li class="padded-skills">Attention to Detail</li>
+          <li class="padded-skills">AWS(intermediate)</li>
+          <li class="padded-skills">Javascript (intermediate)</li>
+          <li class="padded-skills">Java (beginner)</li>
         </ul>
       </div>
     </section>
@@ -136,4 +141,10 @@
       </div><!--achievements sectionContent-->
     </section>
   </div><!--resume-text-->
+  <a href="https://s3-us-west-2.amazonaws.com/kaylamorrisonportfolio/Kayla_Morrison_dev_resume7-28-14.pdf">
+    <div id="download">
+      Click here to download the 1-page version
+    </div>
+  </a>
 </div><!--resume-->
+
