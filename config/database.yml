@@ -51,10 +51,10 @@ test:
   username: kaylamorrison
   password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: realportfolio_production
-#   pool: 5
-#   username: realportfolio
-#   password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: realportfolio_production
+  pool: 5
+  username: realportfolio
+  password:
