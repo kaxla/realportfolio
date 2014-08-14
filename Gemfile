@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'aws-sdk', '~> 1.5.7'
 gem 'bcrypt-ruby'
 gem 'cancancan'
+gem 'capistrano', '~> 3.2.0'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
 gem 'coderay'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
@@ -22,7 +25,7 @@ gem 'redcarpet'
 gem 'sass-rails', '~> 4.0.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-gem 'unicorn-rails'
+gem 'unicorn'
 
 group :development do
   gem "better_errors"
