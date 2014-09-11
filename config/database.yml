@@ -54,7 +54,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: realportfolio_production
+  database: deployer
   pool: 5
-  username: realportfolio
-  password:
+  username: deployer
+  password: knittles
+  host: localhost
