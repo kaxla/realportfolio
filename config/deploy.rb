@@ -15,6 +15,7 @@ set :deploy_to, '/var/www/realportfolio'
 set :repository, 'https://github.com/kaxla/realportfolio.git'
 set :branch, 'master'
 set :user, 'deployer'
+set :term_mode, nil
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
