@@ -37,4 +37,6 @@ group :test do
   gem "launchy"
 end
 
-# To SSH into digital ocean server: ssh -i /Users/kaylamorrison/.ssh/id_rsa_portfolio root@104.131.133.210
+group :production do
+  end
+
