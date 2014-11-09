@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/kaxla/realportfolio.png?label=ready&title=Ready)](https://waffle.io/kaxla/realportfolio)
 #My Portfolio App
 
 ###Live site at [http://kaylaamorrison.com]()
