@@ -21,6 +21,7 @@ gem 'rails', '4.1.0'
 gem 'rails_12factor'
 gem 'rails_admin'
 gem 'redcarpet'
+gem 'rubocop', require: false
 gem 'sass-rails', '~> 4.0.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
@@ -34,7 +35,6 @@ end
 
 group :test do
   gem 'launchy'
-  gem 'rubocop'
 end
 
 group :production do
