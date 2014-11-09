@@ -27,16 +27,15 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn'
 
 group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-  gem "pry-rails"
-  gem "pry-debugger"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'pry-debugger'
 end
 
 group :test do
-  gem "launchy"
+  gem 'launchy'
 end
 
 group :production do
-  end
-
+end

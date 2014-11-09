@@ -2,7 +2,7 @@ require 'rubygems'
 require 'optparse'
 require 'yaml'
 
-desc "create new post with textmate"
+desc 'create new post with textmate'
 task :np do
   OptionParser.new.parse!
   ARGV.shift
@@ -11,26 +11,26 @@ task :np do
   path = "config/jekyll/_posts/#{Date.today}-#{title.downcase.gsub(/[^[:alnum:]]+/, '-')}.markdown"
 
   if File.exist?(path)
-    puts "[WARN] File exists - skipping create"
+    puts '[WARN] File exists - skipping create'
   else
-    File.open(path, "w") do |file|
-      file.puts YAML.dump({'layout' => 'post', 'published' => false, 'title' => title})
-      file.puts "---"
+    File.open(path, 'w') do |file|
+      file.puts YAML.dump('layout' => 'post', 'published' => false, 'title' => title)
+      file.puts '---'
     end
 
     begin
-      config = {'editor' => 'subl'}
+      config = { 'editor' => 'subl' }
       if File.exist?("#{Dir.home}/.bloggyrc")
         config.merge!(YAML.load_file("#{Dir.home}/.bloggyrc"))
       end
     rescue TypeError
-      puts "[WARN] Failed to parse editor from .bloggyrc"
+      puts '[WARN] Failed to parse editor from .bloggyrc'
     end
 
     begin
-    `#{config['editor']} #{path}`
-    rescue Exception
-      puts "[WARN] Could not find editor #{config['editor']} - please edit #{path} manually"
+      `#{config['editor']} #{path}`
+      rescue
+        puts "[WARN] Could not find editor #{config['editor']} - please edit #{path} manually"
     end
 
   end

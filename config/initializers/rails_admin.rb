@@ -4,10 +4,10 @@ RailsAdmin.config do |config|
   config.model 'Project' do
     list do
       field :title do
-        label "Name"
+        label 'Name'
       end
       field :description do
-        label "Description"
+        label 'Description'
       end
     end
   end
