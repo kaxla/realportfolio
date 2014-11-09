@@ -1,0 +1,8 @@
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'app/helpers/application_helper.rb'
+Documentation:
+  Enabled: false

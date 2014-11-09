@@ -26,29 +26,20 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-
-    respond_to do |format|
-      if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @blog }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
-      end
+    if @blog.save
+      redirect_to @blog, notice: 'Blog was successfully created.'
+    else
+      render action: 'new'
     end
   end
 
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
   def update
-    respond_to do |format|
-      if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
-      end
+    if @blog.update(blog_params)
+      redirect_to @blog, notice: 'Blog was successfully updated.'
+    else
+      render action: 'edit'
     end
   end
 
@@ -56,10 +47,7 @@ class BlogsController < ApplicationController
   # DELETE /blogs/1.json
   def destroy
     @blog.destroy
-    respond_to do |format|
-      format.html { redirect_to blogs_url }
-      format.json { head :no_content }
-    end
+    redirect_to blogs_url
   end
 
   private
@@ -69,7 +57,6 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def blog_params
     params[:blog]
   end
