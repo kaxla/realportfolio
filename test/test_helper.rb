@@ -9,5 +9,10 @@ class ActiveSupport::TestCase
 
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  def sign_in
+    visit rails_admin_path
+    fill_in "Email", with: admins(:kayla).email
+    fill_in "Password", with: 'password'
+    click_button "Log in"
+  end
 end

@@ -1,0 +1,3 @@
+kayla:
+  email: kayla@kaylaamorrison.com
+  encrypted_password: <%= Admin.new.send(:password_digest, 'password') %>
