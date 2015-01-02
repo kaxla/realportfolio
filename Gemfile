@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.2'
+
 gem 'aws-sdk', '~> 1.5.7'
 gem 'bcrypt-ruby'
 gem 'cancancan'
@@ -11,6 +13,7 @@ gem 'high_voltage', '~> 2.2.0'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'mail_form'
+gem 'minitest-rails'
 gem 'newrelic_rpm'
 gem 'normalize-rails', '~> 3.0'
 gem 'paperclip', '~> 4.1'
@@ -32,6 +35,7 @@ end
 
 group :test do
   gem 'launchy'
+  gem 'minitest-rails-capybara'
 end
 
 group :production do
