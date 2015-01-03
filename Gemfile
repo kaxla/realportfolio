@@ -20,7 +20,6 @@ gem 'paperclip', '~> 4.1'
 gem 'pg'
 gem 'postmark-rails', '~> 0.8.0'
 gem 'rails', '4.1.0'
-gem 'rails_12factor'
 gem 'rails_admin'
 gem 'redcarpet'
 gem 'rubocop', require: false
@@ -39,4 +38,5 @@ group :test do
 end
 
 group :production do
+  gem 'rails_12factor'
 end
