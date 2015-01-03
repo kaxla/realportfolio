@@ -2,4 +2,11 @@ one:
   title: first blog
   synopsis: first synopsis
   body: first body
+  id: 1
+
+two:
+  title: second blog
+  synopsis: second synopsis
+  body: second body
+  id: 2
 
