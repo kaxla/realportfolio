@@ -30,6 +30,8 @@ gem 'unicorn'
 
 group :development do
   gem 'better_errors'
+  gem 'capybara-console'
+  gem 'selenium-webdriver'
 end
 
 group :test do
