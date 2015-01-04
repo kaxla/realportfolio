@@ -12,7 +12,4 @@ feature "CanSignIn" do
     visit rails_admin_path
     page.text.wont_include "Site Administration"
   end
-
-  scenario "randos can't sign up" do
-  end
 end
