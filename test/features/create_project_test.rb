@@ -17,6 +17,5 @@ feature "CreateProject" do
 
   scenario "randos can't access new project form" do
     visit new_project_path
-
   end
 end
