@@ -1,8 +1,10 @@
 one:
   title: first project
   description: first description
+  id: 1
 
 two:
   title: second project
   description: second description
+  id: 2
 

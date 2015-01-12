@@ -17,5 +17,7 @@ feature "CreateProject" do
 
   scenario "randos can't access new project form" do
     visit new_project_path
+    page.text.must_include "Hello, world! I'm a Full-stack Rails developer"
+    page.text.wont_include "Create Project"
   end
 end
