@@ -1,20 +1,8 @@
-<header>
-<div id='cssmenu'>
-  <ul>
-    <li class='active'><%=link_to 'Home', root_path %></li>
-    <li><a href="/resume">Resume</a></li>
-    <li><%=link_to "Projects", projects_path %></li>
-    <li><%=link_to "Blog", blogs_path %></li>
-    <li class='last'><%=link_to "Contact", new_contact_path %></li>
-  </ul>
-</div>
+<%= render "header" %>
 
-  <div id="essentials">
-    <%= image_tag("essentials.gif", :alt => "There's supposed to be a really cool illustration here") %>
-  </div><!--essentials-->
-</header>
-
-
+<div id="essentials">
+  <%= image_tag("essentials.gif", :alt => "There's supposed to be a really cool illustration here") %>
+</div><!--essentials-->
 
 <div id="about">
   <section id="console-header">
@@ -48,143 +36,7 @@
 </div><!--About-->
 
 <a name="resume"></a>
-<div id="resume">
-  <div id="resume-text">
-    <div id="resume-title">
-      <h1>Resume</h1>
-    </div><!--resume-title-->
-  <!--Profile-->
-    <section class="resume-section">
-      <div class="sectionTitle">
-        <h2>Profile</h2>
-      </div>
-      <div class="sectionContent">
-        <article>
-          <p>I am a Tacoma, Washington based full-stack rails developer<p>
-
-          <p>I am self-motivated and have 2 years experience working remotely. I have primarily worked on back-end Ruby/Rails code, but am constantly improving my front-end skills. I have extensive experience using Zurb's Foundation front-end framework and am comfortable with Angular 1.x in a Rails environment. I have sucessfully upgraded multiple old Rails apps from 3.x to 4.2</p>
-
-          <p>I am currently looking for a full-time remote Ruby on Rails developer job. I would also consider a job in the Seattle area that would allow remote work at least 50% of the time. You can see my code on my github: github.com/kaxla and live versions of my projects below in the "Projects" section.</p>
-        </article>
-      </div>
-    </section>
-
-  <!--Skills -->
-    <section class="resume-section">
-      <div class="sectionTitle">
-        <h2>Skills</h2>
-      </div>
-      <div class="sectionContent">
-        <ul class="keySkills">
-          <li class="padded-skills">Ruby</li>
-          <li class="padded-skills">Rails</li>
-          <li class="padded-skills">AngularJS</li>
-          <li class="padded-skills">Zurb Foundation</li>
-          <li class="padded-skills">Squarespace Customization</li>
-          <li class="padded-skills">Rails Upgrades</li>
-          <li class="padded-skills">MYSQL</li>
-          <li class="padded-skills">Client Communication</li>
-          <li class="padded-skills">Git</li>
-        </ul>
-      </div>
-    </section>
-
-  <!--education-->
-    <section class="resume-section">
-      <div class="sectionTitle">
-        <h2>Education</h2>
-      </div>
-      <div class="sectionContent">
-        <article>
-          <h3><a href="https://www.codefellows.org/">Code Fellows</a></h3>
-            <p class="subDetails2">An intensive Ruby on Rails course designed to turn motivated, intelligent people into rails developers in an 8-week time frame. I was one of 20 students selected from a pool of 300+ applicants based on interviews and technical aptitude.</p>
-        </article>
-        <article>
-          <h3>Bachelor of Arts in International Political Economy</h3>
-            <p class="subDetails2">University of Puget Sound</p>
-        </article>
-      </div>
-    </section>
-
-  <!--WORK-->
-    <section class="resume-section">
-      <div class="sectionTitle"><h2>Work Experience</h2></div>
-      <div class="sectionContent">
-
-        <article>
-          <h3>Developer at Honey NYC</h3>
-          <p class="subDetails">Sept 2015 - April 2016</p>
-            <ul>
-              <li class="padded">Provided customer support and bug fixes for several different companies/apps</li>
-              <li class="padded">Built several new analytic tools to assist clients in crunching complex user-submitted data</li>
-              <li class="padded">Converted sections of a business-facing CMS from KnockoutJS to AngularJS</li>
-              <li class="padded">Upgraded two Rails apps from 3.x to 4.2</li>
-              <li class="padded">Assisted in converting an existing app to Zurb Foundation for front-end</li>
-            </ul>
-        </article>
-
-        <article>
-          <h3>Freelance Web Developer</h3>
-          <p class="subDetails">April 2014 - Sept 2015</p>
-            <ul>
-              <li class="padded">Worked for several clients doing Rails development, static website design and setup, and Squarespace setup and customization (see projects section)</li>
-            </ul>
-        </article>
-
-        <article>
-          <h3>Lead Instructor at Coding With Kids</h3>
-          <p class="subDetails">Jan - Sept 2015</p>
-            <ul>
-              <li class="padded">Taught computer science fundamentals and basic web development to kids in grades K-8 using MIT’s Scratch program and Javascript/HTML/CSS</li>
-            </ul>
-        </article>
-
-        <article>
-          <h3>Ruby on Rails Teaching Assistant at Codefellows</h3>
-          <p class="subDetails">Sept - Nov 2014</p>
-            <ul>
-              <li class="padded">Coached students and answered their programming questions</li>
-              <li class="padded">Graded and provided feedback on student assignments</li>
-            </ul>
-        </article>
-
-        <article>
-          <h3>Administrative Specialist II at King County Elections</h3>
-          <p class="subDetails">June 2012 - January 2014</p>
-            <ul>
-              <li class="padded">Executed detail-oriented data entry, which improved the accuracy and efficiency of elections</li>
-              <li class="padded">Built voter trust and participation by providing excellent customer service over the phone and in person</li>
-            </ul>
-        </article>
-
-        <article>
-          <h3>Alternative Music Director at KUPS</h3>
-          <p class="subDetails">June 2008 - May 2010</p>
-            <ul>
-              <li class="padded">Managed a team of 30 DJs, which allowed them to provide an enjoyable listening experience to our audience</li>
-            </ul>
-        </article>
-      </div><!--work sectionContent-->
-    </section>
-
-    <!--ACHIEVEMENTS-->
-    <section class="resume-section">
-      <div class="sectionTitle"><h2>Achievements</h2></div>
-      <div class="sectionContent">
-        <article>
-          <p label="achievement-top">Selected to be a panelist on the Music Director Summit at the 2009 College Music Journal conference</p>
-          <p label="achievement-bottom">KUPS won the 2009 MTVu Woodie Award for Best College Radio Station</p>
-        </article>
-      </div><!--achievements sectionContent-->
-    </section>
-  </div><!--resume-text-->
-  <div class="download-link">
-    <a href="https://s3-us-west-2.amazonaws.com/kaylamorrisonportfolio/Kayla_Morrison_dev_resume_web_6_3_16.pdf">
-        Click here to download the 1-page version
-      </div>
-    </a>
-  </div>
-</div><!--resume-->
+  <%= render "resume" %>
 
 <div id="portfolio">
   <%= render 'projects/index' %>
