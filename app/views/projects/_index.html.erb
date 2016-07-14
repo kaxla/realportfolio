@@ -1,18 +1,17 @@
-
-  <div class="header">Projects</div>
+ <div class="header">Projects</div>
 
   <% @projects = Project.all %>
     <div class="grid">
   <% @projects.each do |project| %>
+    <%= link_to project_path(project.id) do %>
       <div style="background-image: url(<%= project.project_image.url %>)" class="square">
         <div class="content">
-          <%= link_to project_path(project.id) do %>
             <div class="inner-content">
                 <p><%= project.title %></p>
             </div><!--inner-content-->
-          <% end %>
         </div><!--content-->
       </div><!--square-->
+    <% end %>
   <% end %>
     </div>
   <div style="clear: both;"></div>

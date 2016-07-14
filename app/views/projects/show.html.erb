@@ -6,14 +6,17 @@
     <%= @project.title %>
   </div><!--title-->
 
-  <div class="project-image">
-  <%= image_tag @project.project_image.url%>
+<!--   <div class="project-image">
+    <%= image_tag @project.project_image.url%>
   </div><!--project-image-->
 
   <div id="description">
     <%= markdown(@project.description) %>
   </div><!--description-->
-  <div class="back">
-    <%= link_to 'Back', projects_path %>
-  </div><!--back-->
+
+  <a href="/projects">
+    <div class="back">
+      Back
+    </div><!--back-->
+  </a>
 </div><!--project-show-->
