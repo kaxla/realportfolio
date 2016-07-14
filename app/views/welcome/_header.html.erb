@@ -1,9 +1,9 @@
 <div id='cssmenu'>
   <ul>
-    <li class='active'><%=link_to 'Home', root_path %></li>
-    <li><a href="/resume">Resume</a></li>
-    <li><%=link_to "Projects", projects_path %></li>
-    <li><%=link_to "Blog", blogs_path %></li>
+    <li <% if controller.controller_name == 'welcome' %> class='active' <% end %>><%=link_to 'Home', root_path %></li>
+    <li <% if controller.controller_name == 'pages' %> class='active' <% end %>><a href="/resume">Resume</a></li>
+    <li <% if controller.controller_name == 'projects' %> class='active' <% end %>><%=link_to "Projects", projects_path %></li>
+    <li <% if controller.controller_name == 'blogs' %> class='active' <% end %>><%=link_to "Blog", blogs_path %></li>
     <li class='last'><%=link_to "Contact", new_contact_path %></li>
   </ul>
 </div>
