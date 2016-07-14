@@ -9,8 +9,8 @@ class Contact < MailForm::Base
   def headers
     {
       subject: 'Website email!',
-      to: 'kayla@kaylaamorrison.com',
-      from: 'kayla@kaylaamorrison.com'
+      to: 'kayla@kaylahowser.com',
+      from: 'kayla@kaylahowser.com'
     }
   end
 end
