@@ -13,7 +13,6 @@ gem 'foundation-rails'
 gem 'high_voltage', '~> 2.2.0'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
-gem 'mail_form'
 gem 'minitest-rails'
 gem 'newrelic_rpm'
 gem 'normalize-rails', '~> 3.0'
@@ -31,7 +30,9 @@ gem 'unicorn'
 
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'capybara-console'
+  gem 'letter_opener'
   gem 'selenium-webdriver'
 end
 

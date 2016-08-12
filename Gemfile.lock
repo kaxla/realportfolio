@@ -51,6 +51,8 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
     cancancan (1.14.0)
     capybara (2.7.1)
@@ -77,6 +79,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    debug_inspector (0.0.2)
     devise (4.1.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -119,13 +122,12 @@ GEM
     kgio (2.10.0)
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mail_form (1.5.1)
-      actionmailer (>= 3.2, < 5)
-      activemodel (>= 3.2, < 5)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -281,6 +283,7 @@ DEPENDENCIES
   aws-sdk (~> 1.5.7)
   bcrypt-ruby
   better_errors
+  binding_of_caller
   cancancan
   capybara-console
   coderay
@@ -292,7 +295,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
-  mail_form
+  letter_opener
   minitest-rails
   minitest-rails-capybara
   newrelic_rpm

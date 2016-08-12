@@ -5,13 +5,11 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.request = request
-    if @contact.deliver
-      flash.now[:error] = nil
-      flash.now[:notice] = 'Thank you for your message!'
+
+    if ContactMailer.contact_email(@contact).deliver_now
       redirect_to page_path('contact_thanks')
     else
-      flash.now[:error] = 'Cannot send message.'
+      flash.now[:error] = 'There was a problem, please try again'
       render :new
     end
   end
