@@ -5,7 +5,6 @@ class ContactMailer < ApplicationMailer
       to: ENV['EMAIL'],
       from: ENV['FROM_EMAIL'],
       subject: 'Website email',
-      html_body: '<p>Email from: <%= @contact.name %> (<%= @contact.email %>)</p><p><%= @contact.message %></p>',
     )
   end
 end

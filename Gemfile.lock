@@ -167,12 +167,6 @@ GEM
       ast (~> 2.2)
     pg (0.18.4)
     pkg-config (1.1.7)
-    postmark (1.8.1)
-      json
-      rake
-    postmark-rails (0.13.0)
-      actionmailer (>= 3.0.0)
-      postmark (~> 1.8.0)
     powerpack (0.1.1)
     rack (1.6.4)
     rack-pjax (0.8.0)
@@ -304,7 +298,6 @@ DEPENDENCIES
   normalize-rails (~> 3.0)
   paperclip (~> 4.1)
   pg
-  postmark-rails
   rails (= 4.2.6)
   rails_12factor
   rails_admin

@@ -77,4 +77,14 @@ Realportfolio::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :authentication => :plain,
+    :address => 'smtp.mailgun.org',
+    :port => 587,
+    :domain => 'mg.kaylahowser.com',
+    :user_name => 'postmaster@mg.kaylahowser.com',
+    :password => ENV['MAILGUN_SMTP_PASSWORD']
+  }
 end
