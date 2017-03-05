@@ -11,17 +11,17 @@
   <section id="top-bar"></section>
   <section id="console">
     <section id="console-text">
-      <p class="question">> kayla.education</p>
-      <p class="answer">=> [ "Codefellows", "University of Puget Sound" ]</p>
-
       <p class="question">> kayla.specialties</p>
-      <p class="answer">=> ["Ruby", "Rails", "Squarespace Customization", "Zurb Foundation"]</p>
+      <p class="answer">=> [ "Ruby", "Rails", "Squarespace Customization" ]</p>
+
+      <p class="question">> kayla.education</p>
+      <p class="answer">=> [ "University of Puget Sound" ]</p>
 
       <p class="question">> kayla.email</p>
       <p class="answer">=> "<%= mail_to "kayla@kaylahowser.com" %>"</p>
 
       <p class="question">> kayla.resume.download</p>
-      <p class="answer">=> "<a href="https://s3-us-west-2.amazonaws.com/kaylamorrisonportfolio/Kayla_Morrison_dev_resume_web_6_3_16.pdf">kaylahowser.pdf</a>"</p>
+      <p class="answer">=> "<a href="https://s3-us-west-2.amazonaws.com/kaylamorrisonportfolio/howser-resume-3-3-17.pdf">kaylahowser.pdf</a>"</p>
 
       <p class="question">> kayla.linkedin</p>
       <p class="answer">=> "<a href="http://linkedin.com/in/kaylahowser">linkedin.com/in/kaylahowser</a>"</p>
@@ -30,7 +30,7 @@
       <p class="answer">=> "<a href="http://github.com/kaxla">github.com/kaxla</a>"</p>
 
       <p class="question">> kayla.interests</p>
-      <p class="answer">=> ["gardening", "caligraphy", "general being an old lady"]</p>
+      <p class="answer">=> ["gardening", "calligraphy", "general being an old lady"]</p>
     </section><!--console-text-->
   </section><!--console-->
 </div><!--About-->
@@ -46,8 +46,6 @@
   <div id="recent_blogs_title">Recent Blog Posts</div>
   <%= render 'blogs/mostrecent' %>
 </div><!--recent blogs-->
-
-
 
 <div id="contact">
   <%= render 'contacts/form' %>
