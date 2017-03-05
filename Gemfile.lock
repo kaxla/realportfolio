@@ -282,7 +282,6 @@ DEPENDENCIES
   cancancan
   capybara-console
   coderay
-  coffee-rails (~> 4.0.0)
   devise
   figaro
   foundation-rails
